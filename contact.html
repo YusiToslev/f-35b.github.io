@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+    <head>
+        <meta charset="UTF-8"> <title>The modest aircraft</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Gallery</h1>
+            <nav>
+                <ul>
+                    <a href="F-35B.html">F-35B</a>
+                    <a href="specifications.html">Specifications</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="hovermode.html">Hover mode</a>
+                    <a href="contact.html">Contact</a>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            
+            <form action="/my-handling-form-page" method="post">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" />
+                </div>
+              
+                <div>
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="user_email" />
+                </div>
+              
+                <div>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </div>
+              
+                <div class="button">
+
+                    <style>
+                        .front {
+                          transition:
+                            transform
+                            600ms
+                            cubic-bezier(.3, .7, .4, 1);
+                        }
+                      
+                        .pushable:hover .front {
+                          transform: translateY(-6px);
+                          transition:
+                            transform
+                            250ms
+                            cubic-bezier(.3, .7, .4, 1.5);
+                        }
+                      
+                        .pushable:active .front {
+                          transform: translateY(-2px);
+                          transition: transform 34ms;
+                        }
+                      </style>
+                      
+                      <button class="pushable">
+                        <span class="front">
+                          Send
+                        </span>
+                      </button>
+
+                </div>
+              </form>
+
+        </main>
+
+        <footer>
+           
+        </footer>
+    </body>
+</html>
